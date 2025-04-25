@@ -2,8 +2,9 @@ How to run ftp protocol
 1. unzip ftp.zip to a new folder "unzip_ftp"
 2. clone BinPRE: `git clone https://github.com/ecnusse/BinPRE.git`
 3. go to BinPRE folder 
-4. run `sudo docker build . -t binpre_ae`
-5. run `sudo docker run -v /path/to/unzip_ftp:/mnt/ftp -it binpre_ae /bin/bash`
+4. run `docker pull homebrew/ubuntu20.04`
+5. run `sudo docker build . -t binpre_ae`
+6. run `sudo docker run -v /path/to/unzip_ftp:/mnt/ftp -it binpre_ae /bin/bash`
 
 operations in the container
 1. build a folder `ftp` under "{BinPRE_home}/src"
